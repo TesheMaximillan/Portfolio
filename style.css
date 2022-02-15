@@ -1,0 +1,258 @@
+:root {
+  --color-primary: #1a2236;
+  --color-secondary: #c4c4c4;
+  --color-light: #e5e5e5;
+  --color-white: #fff;
+  --color-orange: #fec25a;
+  --color-dark-orange: #febf52;
+  --color-aqua: #98dede;
+  --color-light-blue: #1c528a;
+  --color-light-blue-2: #547da7;
+  --color-purple: #e2505c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px (browser default) = 62.5% */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  background: var(--color-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.toggle {
+  display: none;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  height: 7.4rem;
+}
+
+.toggle .line {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: var(--color-primary);
+  margin: 0.2rem;
+}
+
+@media only screen and (max-width: 32rem) {
+  .toggle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing > .about {
+  margin: 0 1.6rem 3rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: 100%;
+  color: var(--color-primary);
+  margin: 3.2rem 1.6rem;
+}
+
+.about > p {
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  line-height: 2.1;
+  letter-spacing: -1%;
+}
+
+.btn {
+  height: 5rem;
+  background-color: var(--color-primary);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4;
+  text-align: center;
+  color: var(--color-white);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn:active {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.img-geometry-1 {
+  width: 100%;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-detail {
+  background-color: var(--color-primary);
+  padding: 2rem;
+}
+
+.project-name {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 80%;
+  color: var(--color-white);
+  margin-bottom: 1.6rem;
+}
+
+.languages {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+
+.languages > * {
+  margin-right: 1rem;
+  padding: 0.6rem;
+  list-style: none;
+  font-weight: 300;
+  font-size: 1.033rem;
+  line-height: 0.827;
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-aqua);
+}
+
+.btn-pro {
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid var(--color-white);
+}
+
+.btn-pro > .arrow {
+  font-size: 2.57rem;
+  padding-left: 0.6rem;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-myself {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+  margin: 0 1.6rem 4rem 1.6rem;
+}
+
+.about-myself > .about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.btn-download > .download-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: 2rem;
+  fill: var(--color-primary);
+}
+
+.btn-download > .download-icon:hover {
+  fill: var(--color-primary);
+}
+
+.about-title {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--color-white);
+  margin-bottom: 2.1rem;
+}
+
+.about-myself .about {
+  margin-bottom: 4rem;
+}
+
+.card {
+  padding-left: 5rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.about-icon {
+  align-self: end;
+  height: 10.222rem;
+  width: 10.222rem;
+  padding-bottom: 0;
+  fill: var(--color-light-blue-2);
+}
+
+.card ul {
+  margin-left: 3.4rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.0525em;
+  color: var(--color-white);
+}
+
+.card-1 {
+  background-color: var(--color-light-blue);
+}
+
+.card-2 {
+  background-color: var(--color-purple);
+}
+
+.card-3 {
+  background-color: var(--color-dark-orange);
+}
