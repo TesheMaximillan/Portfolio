@@ -223,8 +223,8 @@ body {
 .card {
   padding-left: 5rem;
   padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
+
+  float: left;
   margin-bottom: 1.6rem;
 }
 
