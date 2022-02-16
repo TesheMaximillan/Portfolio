@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "start": "npx stylelint \"**/*.{css,scss}\""
-  },
+    "linter": "npx stylelint \"**/*.{css,scss}\"",
+    "create-sprite":"svg-sprite-generate -d images/svg -o images/sprite.svg"
+    },
   "devDependencies": {
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
