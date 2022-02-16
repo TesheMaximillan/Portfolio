@@ -6,9 +6,12 @@
   --color-orange: #fec25a;
   --color-dark-orange: #febf52;
   --color-aqua: #98dede;
+  --color-aqua-2: #92dcdc;
   --color-light-blue: #1c528a;
   --color-light-blue-2: #547da7;
   --color-purple: #e2505c;
+  --color-grey-background: #f9f9fa;
+  --color-grey-border: #dfdfe0;
 }
 
 * {
@@ -255,4 +258,62 @@ body {
 
 .card-3 {
   background-color: var(--color-dark-orange);
+}
+
+.contact {
+  background-color: var(--color-grey-background);
+}
+
+.contact-info {
+  padding: 1.8rem;
+}
+
+.contact-title {
+  margin-left: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > .btn {
+  margin-top: 2rem;
+}
+
+.entry {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 0.5rem;
+  border: 1px solid var(--color-grey-border);
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.entry:hover,
+.entry:active {
+  border: 1px solid var(--color-primary);
+}
+
+.input-label {
+  margin: 0.4rem 1.6rem;
+}
+
+.message-label {
+  margin: 1.5rem 1.6rem;
+}
+
+.input-text {
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 0.4rem 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.entry > textarea {
+  height: 6.1rem;
 }
