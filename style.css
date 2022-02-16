@@ -36,6 +36,7 @@ body {
   background: var(--color-white);
 }
 
+/*Mobile Version*/
 .container {
   display: flex;
   flex-direction: column;
@@ -47,8 +48,13 @@ body {
   width: 100vw;
 }
 
-.toggle {
+.navigation-nav {
   display: none;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
   margin-top: 1.5rem;
   margin-right: 1rem;
   cursor: pointer;
@@ -63,13 +69,6 @@ body {
   height: 0.2rem;
   background-color: var(--color-primary);
   margin: 0.2rem;
-}
-
-@media only screen and (max-width: 32rem) {
-  .toggle {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .landing {
@@ -356,4 +355,28 @@ body {
 
 .resume > .icon {
   fill: var(--color-aqua-2);
+}
+
+@media only screen and (min-width:768px){
+  .logo, .toggle {
+    display: none;
+  }
+
+  .navigation-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item {
+    list-style: none;
+    margin: 3.8rem 5rem;
+  }
+
+  .nav-item > .nav-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color-primary);
+  }
 }
