@@ -71,13 +71,7 @@ body {
   margin: 0.2rem;
 }
 
-.landing {
-  display: flex;
-  flex-direction: column;
-}
-
-.landing > .about {
-  margin: 0 1.6rem 3rem 1.6rem;
+.landing-element {
   display: flex;
   flex-direction: column;
 }
@@ -91,7 +85,13 @@ body {
   margin: 3.2rem 1.6rem;
 }
 
-.about > p {
+.landing-about {
+  margin: 0 1.6rem 3rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-about > p {
   margin-bottom: 4rem;
   font-size: 1.4rem;
   line-height: 2.1;
@@ -123,6 +123,10 @@ body {
 
 .img-geometry-1 {
   width: 100%;
+}
+
+.img-geometry-large, .img-geometry > .img-geometry-dot {
+  display: none;
 }
 
 .work {
@@ -378,5 +382,34 @@ body {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: var(--color-primary);
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 1fr minmax(70.2rem, 1fr);
+    margin-left: 14.4rem;
+    grid-column-gap: 9.4rem;
+  }
+
+  .img-geometry > .img-geometry-1 {
+    display: none;
+  }
+
+  .img-geometry-large, 
+  .img-geometry > .img-geometry-dot{
+    display: block;
+  }
+
+  .img-geometry {
+    align-self: flex-end;
+  }
+
+  .landing-element {
+    justify-content: flex-end;
+  }
+
+  .btn {
+    height: 7rem;
+    width: 25.4rem;
   }
 }
