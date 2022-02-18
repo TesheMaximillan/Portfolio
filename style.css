@@ -132,7 +132,9 @@ body {
 .img-geometry_4,
 .img-geometry_5,
 .img-geometry_6,
-.img-geometry_8 {
+.img-geometry_7,
+.img-geometry_8,
+.img-geometry_9 {
   display: none;
 }
 
@@ -240,7 +242,7 @@ body {
   margin-bottom: 2.1rem;
 }
 
-.about-myself .about {
+.about-myself .about-main {
   margin-bottom: 4rem;
 }
 
@@ -258,7 +260,6 @@ body {
   height: 10.222rem;
   width: 10.222rem;
   padding-bottom: 0;
-  fill: var(--color-light-blue-2);
 }
 
 .card ul {
@@ -297,6 +298,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
+  margin-top: 3.2rem;
 }
 
 .form > .btn {
@@ -380,9 +382,14 @@ body {
   fill: var(--color-aqua-2);
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
   .logo,
-  .toggle {
+  .toggle,
+  .project-detail_2,
+  .project-detail_3,
+  .project-detail_4,
+  .project-detail_5,
+  .project-detail_6 {
     display: none;
   }
 
@@ -458,13 +465,13 @@ body {
     line-height: 1.86rem;
   }
 
-  .project-detail > .btn:hover, 
+  .project-detail > .btn:hover,
   .project-detail > .btn:active {
     background-color: var(--color-primary);
     border: 1px solid var(--color-white);
     color: var(--color-white);
   }
-  
+
   .project-detail {
     padding: 6rem;
   }
@@ -478,20 +485,20 @@ body {
   .languages {
     margin: 2.34rem 0 4.13rem 0;
   }
-  
+
   .languages > * {
     margin-right: 1.377rem;
     padding: 1.377rem 1.377rem;
     font-size: 1.377rem;
     line-height: 1.1rem;
   }
-  
+
   .btn-pro {
-    padding: .82rem 1.377rem;
+    padding: 0.82rem 1.377rem;
     border: 1px solid var(--color-primary);
     background-color: var(--color-white);
     color: var(--color-primary);
-  }  
+  }
 
   .project-detail_7 > .project-name {
     font-size: 2rem;
@@ -506,7 +513,7 @@ body {
     margin-right: 1.2rem;
     padding: 1.2rem 1.2rem;
     font-size: 1.2rem;
-    line-height: 1.1rem;  
+    line-height: 1.1rem;
   }
 
   .work {
@@ -517,7 +524,7 @@ body {
   .work-title {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    align-self: center;    
+    align-self: center;
     transform: rotate(-90deg);
     margin: 0;
     padding: 0;
@@ -546,14 +553,6 @@ body {
     grid-row: 1 / 2;
   }
 
-  .project-detail_2,
-  .project-detail_3,
-  .project-detail_4,
-  .project-detail_5,
-  .project-detail_6 {
-    display: none;
-  }
-
   .project-detail_1 {
     width: 100%;
     grid-column: 4 / -1;
@@ -562,7 +561,7 @@ body {
 
   .proj-img_2 {
     width: 100%;
-    transform: translateY(.2rem);
+    transform: translateY(0.2rem);
     grid-column: 1 / span 3;
     grid-row: 4 / span 2;
     align-self: end;
@@ -586,7 +585,7 @@ body {
   .img-geometry_5 {
     display: inline;
     height: 100%;
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
     grid-row: 9 / 10;
   }
 
@@ -636,6 +635,10 @@ body {
     padding-left: 6.61rem;
   }
 
+  .about-myself {
+    margin-bottom: 15rem;
+  }
+
   .card {
     font-weight: 600;
     font-size: 1.378rem;
@@ -643,7 +646,10 @@ body {
   }
 
   .about-icon {
-    z-index: 2;
+    position: absolute;
+    height: 6.61rem;
+    width: 6.61rem;
+    transform: translateY(10.5rem);
   }
 
   .card > ul {
@@ -658,10 +664,84 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .img-geometry_8 {
     display: inline;
     width: 15.29rem;
     align-self: end;
     justify-self: end;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr minmax(37.75rem, 41.86rem) 1fr;
+    grid-row: minmax(65.44rem, 72.57rem) 1fr;
+  }
+
+  .img-geometry_7 {
+    display: inline;
+    width: 20.1rem;
+  }
+
+  .img-geometry_9 {
+    display: inline;
+    width: 26.79rem;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .social {
+    margin-top: 0;
+    grid-column: 1 / -1;
+  }
+
+  .contact-info {
+    padding: 0;
+    margin-top: 11.57rem;
+  }
+
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .entry-name,
+  .entry-email {
+    width: 48%;
+  }
+
+  .entry-name {
+    margin-right: 4%;
+  }
+
+  .entry-message {
+    width: 100%;
+  }
+
+  .form > .btn {
+    margin-bottom: 9.3rem;
+  }
+
+  .social {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.6rem;
+  }
+
+  .social-icon > .icon {
+    margin-right: 1.5rem;
+  }
+
+  .social-icon {
+    margin: 0;
+  }
+
+  .resume {
+    margin: 3rem 12rem;
   }
 }
