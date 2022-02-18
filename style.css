@@ -38,6 +38,19 @@ body {
 
 /************************ Mobile Version ************************/
 
+.img-geometry-large,
+.img-geometry-dot,
+.img-geometry-dot_2,
+.img-geometry_3,
+.img-geometry_4,
+.img-geometry_5,
+.img-geometry_6,
+.img-geometry_7,
+.img-geometry_8,
+.img-geometry_9 {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -126,19 +139,6 @@ body {
   width: 100%;
 }
 
-.img-geometry-large,
-.img-geometry-dot,
-.img-geometry-dot_2,
-.img-geometry_3,
-.img-geometry_4,
-.img-geometry_5,
-.img-geometry_6,
-.img-geometry_7,
-.img-geometry_8,
-.img-geometry_9 {
-  display: none;
-}
-
 .proj-img_1,
 .proj-img_2,
 .proj-img_3,
@@ -197,11 +197,13 @@ body {
   text-decoration: none;
   padding: 1rem;
   border: 1px solid var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn-pro > .arrow {
   font-size: 2.57rem;
-  padding-left: 0.6rem;
 }
 
 .btn-download {
@@ -519,6 +521,7 @@ body {
   .work {
     grid-template-columns: repeat(9, minmax(11.022rem, 12.222rem));
     grid-template-rows: repeat(10, minmax(11.022rem, 12.222rem));
+    margin-top: 16.42rem;
   }
 
   .work-title {
