@@ -426,7 +426,7 @@ body {
     z-index: 2;
   }
 
-  .nav-link:after {
+  .nav-link::after {
     position: absolute;
     content: "";
     top: 0;
@@ -434,14 +434,14 @@ body {
     width: 0;
     height: 100%;
     background-color: var(--color-primary);
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .nav-link:hover {
     color: var(--color-white);
   }
 
-  .nav-link:hover:after {
+  .nav-link:hover::after {
     width: 100%;
   }
 
