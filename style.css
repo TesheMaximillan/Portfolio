@@ -36,7 +36,8 @@ body {
   background: var(--color-white);
 }
 
-/*Mobile Version*/
+/************************ Mobile Version ************************/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -382,6 +383,8 @@ body {
   fill: var(--color-aqua-2);
 }
 
+/*************** Desktop Version [screen size 992px - 1100px] ***************/
+
 @media only screen and (min-width: 992px) and (max-width: 1100px) {
   .logo,
   .toggle,
@@ -420,6 +423,7 @@ body {
   }
 
   .landing-element {
+    justify-content: flex-end;
     padding-left: 16rem;
   }
 
@@ -452,10 +456,6 @@ body {
 
   .img-geometry {
     align-self: flex-end;
-  }
-
-  .landing-element {
-    justify-content: flex-end;
   }
 
   .btn {
@@ -539,7 +539,8 @@ body {
     grid-row: 4 / span 2;
     align-self: end;
   }
-  .img-geometry-dot {
+
+  .img-geometry > .img-geometry-dot {
     display: inline;
     width: 100%;
     grid-column: 3 / 4;
@@ -574,6 +575,7 @@ body {
     grid-column: 4 / span 3;
     grid-row: 4 / span 2;
   }
+
   .img-geometry_4 {
     display: inline;
     align-self: end;
@@ -627,16 +629,13 @@ body {
     grid-template-columns: repeat(4, minmax(19.9rem, 22.07rem));
     grid-template-rows: repeat(2, minmax(19.9rem, 22.07rem));
     justify-content: end;
+    margin-bottom: 15rem;
   }
 
   .about-main {
     grid-column: 3 / -1;
     grid-row: 1 / -1;
     padding-left: 6.61rem;
-  }
-
-  .about-myself {
-    margin-bottom: 15rem;
   }
 
   .card {
@@ -675,7 +674,6 @@ body {
   .contact {
     display: grid;
     grid-template-columns: 1fr minmax(37.75rem, 41.86rem) 1fr;
-    grid-row: minmax(65.44rem, 72.57rem) 1fr;
   }
 
   .img-geometry_7 {
@@ -693,6 +691,10 @@ body {
   .social {
     margin-top: 0;
     grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
   }
 
   .contact-info {
@@ -719,18 +721,8 @@ body {
     width: 100%;
   }
 
-  .form > .btn {
+  .btn-submit {
     margin-bottom: 9.3rem;
-  }
-
-  .social {
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 6.4rem;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 1.6rem;
   }
 
   .social-icon > .icon {
@@ -742,6 +734,6 @@ body {
   }
 
   .resume {
-    margin: 3rem 12rem;
+    margin: 4.8rem 12rem;
   }
 }
