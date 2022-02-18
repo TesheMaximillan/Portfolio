@@ -131,7 +131,8 @@ body {
 .img-geometry_3,
 .img-geometry_4,
 .img-geometry_5,
-.img-geometry_6 {
+.img-geometry_6,
+.img-geometry_8 {
   display: none;
 }
 
@@ -204,6 +205,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .about-myself {
@@ -250,6 +253,7 @@ body {
 }
 
 .about-icon {
+  justify-self: end;
   align-self: end;
   height: 10.222rem;
   width: 10.222rem;
@@ -376,7 +380,7 @@ body {
   fill: var(--color-aqua-2);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1100px){
+@media only screen and (min-width: 992px){
   .logo,
   .toggle {
     display: none;
@@ -618,5 +622,46 @@ body {
     width: 100%;
     grid-column: 7 / span 3;
     grid-row: 4 / span 2;
+  }
+
+  .about-myself {
+    grid-template-columns: repeat(4, minmax(19.9rem, 22.07rem));
+    grid-template-rows: repeat(2, minmax(19.9rem, 22.07rem));
+    justify-content: end;
+  }
+
+  .about-main {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+    padding-left: 6.61rem;
+  }
+
+  .card {
+    font-weight: 600;
+    font-size: 1.378rem;
+    line-height: 2.067rem;
+  }
+
+  .about-icon {
+    z-index: 2;
+  }
+
+  .card > ul {
+    font-weight: 400;
+    font-size: 1.24rem;
+    line-height: 1.86rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 100%;
+    height: 100%;
+  }
+  .img-geometry_8 {
+    display: inline;
+    width: 15.29rem;
+    align-self: end;
+    justify-self: end;
   }
 }
