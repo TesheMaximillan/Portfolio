@@ -433,6 +433,23 @@ body {
     margin: 0;
   }
 
+  /* Adding animation to the landing about */
+  .landing-about p {
+    animation: fadeDown 1000ms;
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .img-geometry > .img-geometry-1 {
     display: none;
   }
