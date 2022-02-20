@@ -10,11 +10,14 @@
 - HTML5
 - CSS3
 
+## Working Device Screen Size
 
-## Live Demo (if available)
+- Mobile version <600px 📱
+- Desktop verrsion 992px - 1100px 🖥️
+
+## Live Demo
 
 [Live Demo Link](https://teshemaximillan.github.io/Portfolio/)
-
 
 ## Author
 
