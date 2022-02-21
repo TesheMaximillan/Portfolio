@@ -412,7 +412,7 @@ body {
 
 /*************** Desktop Version [screen size 992px - 1100px] ***************/
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   .logo,
   .toggle,
   .project-detail_2,
