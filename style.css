@@ -226,6 +226,27 @@ body {
   margin-bottom: 1.6rem;
 }
 
+  /* Adding animation to the landing about */
+  .landing-about p {
+    animation: fadeDown 1000ms;
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .img-geometry > .img-geometry-1 {
+    display: none;
+  }
+
 .btn-download > .download-icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -460,27 +481,6 @@ body {
 
   .landing-about {
     margin: 0;
-  }
-
-  /* Adding animation to the landing about */
-  .landing-about p {
-    animation: fadeDown 1000ms;
-  }
-
-  @keyframes fadeDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .img-geometry > .img-geometry-1 {
-    display: none;
   }
 
   .landing-title {
