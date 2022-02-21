@@ -33,7 +33,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  background: var(--color-white);
+  background-color: var(--color-light);
+  display: flex;
+  justify-content: center;
 }
 
 /************************ Mobile Version ************************/
@@ -52,8 +54,10 @@ body {
 }
 
 .container {
+  max-width: 120rem;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-white);
 }
 
 .navigation {
@@ -408,7 +412,7 @@ body {
 
 /*************** Desktop Version [screen size 992px - 1100px] ***************/
 
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
+@media only screen and (min-width: 992px){
   .logo,
   .toggle,
   .project-detail_2,
