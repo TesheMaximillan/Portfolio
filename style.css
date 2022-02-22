@@ -34,8 +34,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   background-color: var(--color-light);
-  display: flex;
-  justify-content: center;
 }
 
 /************************ Mobile Version ************************/
@@ -54,13 +52,14 @@ body {
 }
 
 .container {
+  margin: auto;
   max-width: 120rem;
   display: flex;
   flex-direction: column;
   background-color: var(--color-white);
 }
 
-.navigation {
+.header {
   display: flex;
   justify-content: space-between;
   width: 100vw;
