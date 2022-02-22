@@ -27,7 +27,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* 1rem = 10px, 10px/16px (browser default) = 62.5% */
+  font-size: 62.5%;
+  /* 1rem = 10px, 10px/16px (browser default) = 62.5% */
 }
 
 body {
@@ -62,7 +63,12 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation-nav {
@@ -108,7 +114,7 @@ body {
   flex-direction: column;
 }
 
-.landing-about > p {
+.landing-about>p {
   margin-bottom: 4rem;
   font-size: 1.4rem;
   line-height: 2.1;
@@ -184,7 +190,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.languages > * {
+.languages>* {
   margin-right: 1rem;
   padding: 0.6rem;
   list-style: none;
@@ -205,7 +211,7 @@ body {
   align-items: center;
 }
 
-.btn-pro > .arrow {
+.btn-pro>.arrow {
   font-size: 2.57rem;
 }
 
@@ -223,7 +229,7 @@ body {
   margin: 0 1.6rem 4rem 1.6rem;
 }
 
-.about-myself > .about {
+.about-myself>.about {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.6rem;
@@ -246,18 +252,18 @@ body {
   }
 }
 
-.img-geometry > .img-geometry-1 {
+.img-geometry>.img-geometry-1 {
   display: none;
 }
 
-.btn-download > .download-icon {
+.btn-download>.download-icon {
   height: 2.4rem;
   width: 2.4rem;
   margin-left: 2rem;
   fill: var(--color-primary);
 }
 
-.btn-download > .download-icon:hover {
+.btn-download>.download-icon:hover {
   fill: var(--color-primary);
 }
 
@@ -328,7 +334,7 @@ body {
   margin-top: 3.2rem;
 }
 
-.form > .btn {
+.form>.btn {
   margin-top: 2rem;
 }
 
@@ -365,7 +371,7 @@ body {
   line-height: 2.1rem;
 }
 
-.entry > textarea {
+.entry>textarea {
   height: 6.1rem;
 }
 
@@ -380,7 +386,7 @@ body {
   margin-top: 1.6rem;
 }
 
-.resume > p {
+.resume>p {
   margin-right: 1.6rem;
 }
 
@@ -405,13 +411,14 @@ body {
   cursor: pointer;
 }
 
-.resume > .icon {
+.resume>.icon {
   fill: var(--color-aqua-2);
 }
 
 /*************** Desktop Version [screen size 992px - 1100px] ***************/
 
 @media only screen and (min-width: 992px) {
+
   .logo,
   .toggle,
   .project-detail_2,
@@ -422,10 +429,13 @@ body {
     display: none;
   }
 
-  .navigation-nav {
-    width: 100%;
-    display: flex;
+  .navigation {
     justify-content: center;
+  }
+
+  .navigation-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav-item {
@@ -433,7 +443,7 @@ body {
     padding: 3.8rem 5rem;
   }
 
-  .nav-item > .nav-link {
+  .nav-item>.nav-link {
     display: block;
     width: 10rem;
     height: 3rem;
@@ -496,7 +506,7 @@ body {
   }
 
   .img-geometry-large,
-  .img-geometry > .img-geometry-dot {
+  .img-geometry>.img-geometry-dot {
     display: inline;
     width: 12rem;
   }
@@ -516,8 +526,8 @@ body {
     line-height: 1.86rem;
   }
 
-  .project-detail > .btn:hover,
-  .project-detail > .btn:active {
+  .project-detail>.btn:hover,
+  .project-detail>.btn:active {
     background-color: var(--color-primary);
     border: 1px solid var(--color-white);
     color: var(--color-white);
@@ -537,7 +547,7 @@ body {
     margin: 2.34rem 0 4.13rem 0;
   }
 
-  .languages > * {
+  .languages>* {
     margin-right: 1.377rem;
     padding: 1.377rem 1.377rem;
     font-size: 1.377rem;
@@ -551,16 +561,16 @@ body {
     color: var(--color-primary);
   }
 
-  .project-detail_7 > .project-name {
+  .project-detail_7>.project-name {
     font-size: 2rem;
     line-height: 1.6rem;
   }
 
-  .project-detail_7 > .languages {
+  .project-detail_7>.languages {
     margin: 1.6rem 0 1.6rem 0;
   }
 
-  .project-detail_7 > .languages > * {
+  .project-detail_7>.languages>* {
     margin-right: 1.2rem;
     padding: 1.2rem 1.2rem;
     font-size: 1.2rem;
@@ -592,7 +602,7 @@ body {
     align-self: end;
   }
 
-  .img-geometry > .img-geometry-dot {
+  .img-geometry>.img-geometry-dot {
     display: inline;
     width: 100%;
     grid-column: 3 / 4;
@@ -703,7 +713,7 @@ body {
     transform: translateY(10.5rem);
   }
 
-  .card > ul {
+  .card>ul {
     font-weight: 400;
     font-size: 1.24rem;
     line-height: 1.86rem;
@@ -777,7 +787,7 @@ body {
     margin-bottom: 9.3rem;
   }
 
-  .social-icon > .icon {
+  .social-icon>.icon {
     margin-right: 1.5rem;
   }
 
