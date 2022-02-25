@@ -9,7 +9,7 @@
   --color-aqua-2: #92dcdc;
   --color-light-blue: #1c528a;
   --color-light-blue-2: #547da7;
-  --color-purple: #e2505c;
+  --color-purple: #AB1C28;
   --color-grey-background: #f9f9fa;
   --color-grey-border: #dfdfe0;
 }
@@ -47,7 +47,8 @@ body {
 .img-geometry_6,
 .img-geometry_7,
 .img-geometry_8,
-.img-geometry_9 {
+.img-geometry_9,
+.navigation-nav {
   display: none;
 }
 
@@ -68,10 +69,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-
-.navigation-nav {
-  display: none;
 }
 
 .toggle {
@@ -96,6 +93,16 @@ body {
 .landing-element {
   display: flex;
   flex-direction: column;
+}
+
+.landing-title {
+  max-width: 90%;
+  align-self: center;
+}
+
+.about-detail,
+.about > p {
+  font-size: 1.4rem;
 }
 
 .title {
@@ -145,6 +152,7 @@ body {
 
 .img-geometry-1 {
   width: 100%;
+  max-height: 37rem;
 }
 
 .proj-img_1,
@@ -251,10 +259,6 @@ body {
   }
 }
 
-.img-geometry > .img-geometry-1 {
-  display: none;
-}
-
 .btn-download > .download-icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -275,6 +279,8 @@ body {
 }
 
 .about-myself .about-main {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 4rem;
 }
 
@@ -313,6 +319,11 @@ body {
 
 .card-3 {
   background-color: var(--color-dark-orange);
+}
+
+.card-3 > ul,
+.card-3 > .about-title {
+  color: var(--color-primary);
 }
 
 .contact {
@@ -414,7 +425,69 @@ body {
   fill: var(--color-aqua-2);
 }
 
-/*************** Desktop Version [screen size 992px - 1100px] ***************/
+/*************** Medium Device [screen size 768px - 992pxx] ***************/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-detail_7 {
+    display: none;
+  }
+
+  .landing-title {
+    max-width: 80%;
+    align-self: center;
+  }
+
+  .landing-about > p,
+  .about-detail > p,
+  .contact-info > .about > p {
+    font-size: 1.6rem;
+  }
+
+  .landing-about > .btn {
+    width: 50%;
+  }
+  .work {
+    background-color: var(--color-grey-background);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+  }
+
+  .work-title {
+    grid-column: 1 / -1;
+  }
+
+  .about-myself {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-main {
+    grid-column: 1 / -1;
+  }
+
+  .about-detail > .btn {
+    width: 50%;
+  }
+
+  .card-1,
+  .card-2 {
+    margin-bottom: 0;
+  }
+
+  .form,
+  .contact-info,
+  .contact-title,
+  .contact-info > .about > p {
+    width: 80%;
+    margin: 3.2rem auto;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*************** Desktop Version [screen size 992px - 1200px] ***************/
 
 @media only screen and (min-width: 992px) {
   .logo,
@@ -423,12 +496,14 @@ body {
   .project-detail_3,
   .project-detail_4,
   .project-detail_5,
-  .project-detail_6 {
+  .project-detail_6,
+  .img-geometry > .img-geometry-1 {
     display: none;
   }
 
   .navigation {
     justify-content: center;
+    position: relative;
   }
 
   .navigation-nav {
@@ -438,7 +513,7 @@ body {
 
   .nav-item {
     list-style: none;
-    padding: 3.8rem 5rem;
+    padding: 3.8rem 2.5rem;
   }
 
   .nav-item > .nav-link {
@@ -700,7 +775,7 @@ body {
 
   .card {
     font-weight: 600;
-    font-size: 1.378rem;
+    font-size: 1.4rem;
     line-height: 2.067rem;
   }
 
@@ -712,7 +787,7 @@ body {
   }
 
   .card > ul {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.24rem;
     line-height: 1.86rem;
   }
