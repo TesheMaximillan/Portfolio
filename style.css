@@ -9,7 +9,7 @@
   --color-aqua-2: #92dcdc;
   --color-light-blue: #1c528a;
   --color-light-blue-2: #547da7;
-  --color-purple: #AB1C28;
+  --color-purple: #ab1c28;
   --color-grey-background: #f9f9fa;
   --color-grey-border: #dfdfe0;
 }
@@ -446,6 +446,7 @@ body {
   .landing-about > .btn {
     width: 50%;
   }
+
   .work {
     background-color: var(--color-grey-background);
     grid-template-columns: repeat(2, 1fr);
