@@ -21,8 +21,8 @@ const toggleModal = () => {
 
 for (let i = 0; i < projButton.length; i++) {
   projButton[i].addEventListener("click", () => {
-    projectModal.classList.toggle("show-modal");
     container.classList.toggle("hide-container");
+    projectModal.classList.toggle("show-modal");
 
     let modalSection2 = `
     <div class="modal-section">
