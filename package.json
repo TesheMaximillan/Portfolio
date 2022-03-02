@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "linter": "npx stylelint \"**/*.{css,scss}\"",
+    "linter": "npx stylelint \"**/*.{css,scss}\" --fix",
     "create-sprite":"svg-sprite-generate -d images/svg -o images/sprite.svg"
     },
   "devDependencies": {
