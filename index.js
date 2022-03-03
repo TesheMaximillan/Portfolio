@@ -4,13 +4,14 @@ const body = document.querySelector('body');
 const projectModal = document.querySelector('.project-modal');
 const container = document.querySelector('.container');
 const projButton = document.querySelectorAll('.btn-pro');
+const toggleMenu = document.querySelector('.toggle');
 
 /// ///////////////////////////////// Mobile Menu
-const toggleMenu = (menu) => {
-  menu.classList.toggle('open');
+toggleMenu.addEventListener('click', () => {
+  toggleMenu.classList.toggle('open');
   logo.classList.toggle('logo-display');
   body.classList.toggle('overflow-hidden');
-};
+});
 
 const toggleModal = () => {
   projectModal.classList.toggle('show-modal');
