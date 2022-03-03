@@ -14,6 +14,7 @@ toggleMenu.addEventListener('click', () => {
   body.classList.toggle('overflow-hidden');
 });
 
+/// ///////////////////////////////// Popup Window
 function closeModal() {
   projectModal.classList.toggle('show-modal');
   container.classList.toggle('hide-container');
