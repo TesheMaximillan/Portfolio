@@ -5,6 +5,7 @@ const projectModal = document.querySelector('.project-modal');
 const container = document.querySelector('.container');
 const projButton = document.querySelectorAll('.btn-pro');
 const toggleMenu = document.querySelector('.toggle');
+const form = document.querySelector('.form');
 // const closeIcon = document.querySelector('icon-close');
 
 /// ///////////////////////////////// Mobile Menu
@@ -183,3 +184,34 @@ for (let i = 0; i < projects.length; i += 1) {
     projectModal.innerHTML = modalSection2;
   });
 }
+
+/// ///////////////////////////////// Data manipulation in popup window
+const EMAIL_INVALID = 'email field has to be in lower case.';
+
+const showError = (input, message) => {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  msg.classList.add('error-message');
+};
+
+const validateEmail = (input, errorMessage) => {
+  const email = input.value.trim();
+  if (email !== email.toLowerCase()) {
+    return showError(input, errorMessage);
+  }
+
+  return true;
+};
+
+form.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+
+  // validate the form
+  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
+
+  // if valid, submit the form.
+  if (emailValid) {
+    document.forms[0].submit();
+  }
+});

@@ -3,6 +3,7 @@
   --color-primary-transparent: rgba(26, 34, 54, 0.979);
   --color-secondary: #c4c4c4;
   --color-light: #e5e5e5;
+  --color-light-2: #f5f5f5;
   --color-white: #fff;
   --color-orange: #fec25a;
   --color-dark-orange: #febf52;
@@ -486,6 +487,16 @@ body {
 
 .form > .btn {
   margin-top: 2rem;
+}
+
+.error-message {
+  display: block;
+  background-color: var(--color-light-2);
+  color: red;
+  padding: 0.3rem;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 1rem;
 }
 
 .entry {

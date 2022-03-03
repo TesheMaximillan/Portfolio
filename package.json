@@ -2,7 +2,7 @@
   "scripts": {
     "stylint": "npx stylelint \"**/*.{css,scss}\" --fix",
     "eslintrc": "npx eslint . --fix",
-    "hintrc": "npx hint . --fix",
+    "hintrc": "npx hint .",
     "create-sprite": "svg-sprite-generate -d images/svg -o images/sprite.svg"
   },
   "devDependencies": {
