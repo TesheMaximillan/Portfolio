@@ -185,7 +185,7 @@ for (let i = 0; i < projects.length; i += 1) {
   });
 }
 
-/// ///////////////////////////////// Data manipulation in popup window
+/// ///////////////////////////////// Client side form validation
 const EMAIL_INVALID = 'email field has to be in lower case.';
 
 const showError = (input, message) => {
@@ -203,6 +203,15 @@ const validateEmail = (input, errorMessage) => {
   return true;
 };
 
+/// ///////////////////////////////// Display the data in the form field
+const displayData = () => {
+  // console.log(JSON.parse(localStorage.getItem('formData')));
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  form.elements.name.value = name;
+  form.elements.email.value = email;
+  form.elements.message.value = message;
+};
+
 form.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
@@ -213,5 +222,16 @@ form.addEventListener('submit', (event) => {
   // if valid, submit the form.
   if (emailValid) {
     document.forms[0].submit();
+
+    /// ///////////////////////////////// Preserve data in the browser
+    const formData = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      message: form.elements.message.value,
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
+
+displayData();
