@@ -203,6 +203,15 @@ const validateEmail = (input, errorMessage) => {
   return true;
 };
 
+/// ///////////////////////////////// Display the data in the form field
+const displayData = () => {
+  // console.log(JSON.parse(localStorage.getItem('formData')));
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  form.elements.name.value = name;
+  form.elements.email.value = email;
+  form.elements.message.value = message;
+};
+
 form.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
@@ -224,14 +233,5 @@ form.addEventListener('submit', (event) => {
     localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
-
-/// ///////////////////////////////// Display the data in the form field
-const displayData = () => {
-  // console.log(JSON.parse(localStorage.getItem('formData')));
-  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
-  form.elements.name.value = name;
-  form.elements.email.value = email;
-  form.elements.message.value = message;
-};
 
 displayData();
