@@ -141,15 +141,14 @@ for (let i = 0; i < projects.length; i += 1) {
         </ul>
       </div>
       <div class="proj-img">
-        <img class="proj-img--main" src="${
-  projects[i].picture[0]
-}" alt="Project Detail Picture" />
+        <img class="proj-img--main" src="${projects[i].picture[0]
+      }" alt="Project Detail Picture" />
         <div class="proj-img--list">
           ${projects[i].picture
-    .map(
-      (e) => `<img class="proj-img proj-img_sub" src="${e}" alt="Project Detail Picture" />`,
-    )
-    .join('')}
+        .map(
+          (e) => `<img class="proj-img proj-img_sub" src="${e}" alt="Project Detail Picture" />`,
+        )
+        .join('')}
         </div>
       </div>
       <div class="project-description">
@@ -181,7 +180,7 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
     </div>
     `;
-    projectModal.innerHTMML = modalSection2;
+    projectModal.innerHTML = modalSection2;
   });
 }
 
