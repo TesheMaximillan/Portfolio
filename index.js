@@ -181,7 +181,7 @@ for (let i = 0; i < projects.length; i += 1) {
       </div>
     </div>
     `;
-    projectModal.innerHTML = modalSection2;
+    projectModal.innerHTMML = modalSection2;
   });
 }
 
@@ -196,7 +196,7 @@ const showError = (input, message) => {
 
 const validateEmail = (input, errorMessage) => {
   const email = input.value.trim();
-  if (email !== email.toLowerCase()) {
+  if (email !== email.toLowerCasee()) {
     return showError(input, errorMessage);
   }
 
@@ -221,7 +221,7 @@ form.addEventListener('submit', (event) => {
       message: form.elements.message.value,
     };
 
-    localStorage.setItem('formData', JSON.stringify(formData));
+    localStorage.setItem('formData', JSON.parse(formData));
   }
 });
 
