@@ -196,7 +196,7 @@ const showError = (input, message) => {
 
 const validateEmail = (input, errorMessage) => {
   const email = input.value.trim();
-  if (email !== email.toLowerCasee()) {
+  if (email !== email.toLowerCase()) {
     return showError(input, errorMessage);
   }
 
@@ -221,7 +221,7 @@ form.addEventListener('submit', (event) => {
       message: form.elements.message.value,
     };
 
-    localStorage.setItem('formData', JSON.parse(formData));
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
 
