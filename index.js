@@ -122,7 +122,6 @@ const projects = [
 ];
 
 /// ///////////////////////////////// Data manipulation in popup window
-
 for (let i = 0; i < projects.length; i += 1) {
   projButton[i].addEventListener('click', () => {
     container.classList.toggle('hide-container');
