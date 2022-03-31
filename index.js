@@ -24,20 +24,20 @@ function closeModal() {
 /// ///////////////////////////////// Data store for popup window
 const projects = [
   {
-    name: 'Project name goes here',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    name: 'Art-Blog Website',
+    technologies: ['HTML/SCSS', 'JavaScript'],
     picture: [
-      'images/project/Rectangle21.png',
-      'images/project/Rectangle21.png',
-      'images/project/Rectangle21.png',
-      'images/project/Rectangle21.png',
+      'https://user-images.githubusercontent.com/51437483/161064540-3f51158b-497c-494c-997e-c19004b7cb37.JPG',
+      'https://user-images.githubusercontent.com/51437483/161064540-3f51158b-497c-494c-997e-c19004b7cb37.JPG',
+      'https://user-images.githubusercontent.com/51437483/161064540-3f51158b-497c-494c-997e-c19004b7cb37.JPG',
+      'https://user-images.githubusercontent.com/51437483/161064540-3f51158b-497c-494c-997e-c19004b7cb37.JPG',
     ],
     description: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
       'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     ],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://teshemaximillan.github.io/ArtBlog/',
+    linkToSource: 'https://github.com/TesheMaximillan/ArtBlog',
   },
   {
     name: 'Project name goes here',
@@ -104,20 +104,20 @@ const projects = [
     linkToSource: '#',
   },
   {
-    name: 'Project name goes here',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    name: 'Awesome Books',
+    technologies: ['HTML/SCSS', 'JavaScript'],
     picture: [
-      'images/project/Rectangle21(5).png',
-      'images/project/Rectangle21(5).png',
-      'images/project/Rectangle21(5).png',
-      'images/project/Rectangle21(5).png',
+      'https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg',
+      'https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg',
+      'https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg',
+      'https://user-images.githubusercontent.com/51437483/159135872-8873034c-198c-4b56-9cd0-70091ad7b818.jpg',
     ],
     description: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
       'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     ],
-    linkToLive: '#',
-    linkToSource: '#',
+    linkToLive: 'https://teshemaximillan.github.io/Awesome-Books-Modules/',
+    linkToSource: 'https://github.com/TesheMaximillan/Awesome-Books-Modules',
   },
 ];
 
@@ -164,7 +164,7 @@ for (let i = 0; i < projects.length; i += 1) {
             </svg>
           </span>
         </a>
-        <a href=""${projects[i].linkToSource}" class="btn btn-light btn-source">
+        <a href="${projects[i].linkToSource}" class="btn btn-light btn-source">
           <span class="btn-name">See Source</span>
           <span class="btn-icon">
             <svg class="icon">
